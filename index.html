@@ -1,0 +1,526 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#07110c">
+    <meta name="description" content="NERO NEMESIS FC — résultats, statistiques, classement des buteurs et effectif du club.">
+
+    <title>NERO NEMESIS FC | One Team. One Legacy.</title>
+
+    <!-- Polices du site -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Fichier CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bibliothèque Supabase -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <!-- Fichier JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="page-glow" aria-hidden="true"></div>
+
+    <!-- =========================
+         EN-TÊTE ET NAVIGATION
+    ========================== -->
+
+    <header class="header">
+
+        <a href="#accueil" class="logo" aria-label="NERO NEMESIS FC, accueil">
+            <div class="logo-icon">N</div>
+
+            <div class="logo-text">
+                <h1>NERO NEMESIS</h1>
+                <p>FOOTBALL CLUB</p>
+            </div>
+        </a>
+
+        <nav aria-label="Navigation principale">
+            <a href="#accueil">Accueil</a>
+            <a href="#statistiques">Stats</a>
+            <a href="#buteurs">Buteurs</a>
+            <a href="#matchs">Matchs</a>
+            <a href="#joueurs">Effectif</a>
+        </nav>
+
+        <div class="header-status">
+            <span class="status-dot"></span>
+            CLUB OFFICIEL
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             ACCUEIL
+        ========================== -->
+
+        <section class="hero" id="accueil">
+
+            <div class="hero-content">
+
+                <div class="hero-label">
+                    <span></span> SAISON 2026 / 2027
+                </div>
+
+                <p class="hero-small">WELCOME TO THE HOME OF</p>
+
+                <h2>
+                    NERO<br>
+                    <span>NEMESIS.</span>
+                </h2>
+
+                <p class="hero-description">
+                    Une équipe. Une ambition. Une seule identité.
+                    L'histoire s'écrit sur le terrain.
+                </p>
+
+                <a href="#statistiques" class="hero-button">
+                    DÉCOUVRIR LE CLUB <span>↗</span>
+                </a>
+
+            </div>
+
+            <div class="hero-decoration" aria-hidden="true">
+                <div class="hero-circle">
+                    <span>N</span>
+                </div>
+                <p>EST. 2026</p>
+            </div>
+
+            <div class="hero-bottom">
+                <span>ONE TEAM.</span>
+                <span>ONE LEGACY.</span>
+            </div>
+
+            <div class="hero-watermark" aria-hidden="true">NN</div>
+
+        </section>
+
+
+        <!-- =========================
+             STATISTIQUES DU CLUB
+        ========================== -->
+
+        <section class="stats-section" id="statistiques">
+
+            <div class="section-topline">
+                <span>01 / PERFORMANCE</span>
+                <span>CLUB OVERVIEW</span>
+            </div>
+
+            <div class="stats">
+
+                <article class="stat-card stat-highlight">
+                    <div class="stat-top">
+                        <span class="stat-icon">⚽</span>
+                        <span class="stat-number">01</span>
+                    </div>
+                    <h3 id="total-buts">0</h3>
+                    <p>BUTS MARQUÉS</p>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span class="stat-icon">🥅</span>
+                        <span class="stat-number">02</span>
+                    </div>
+                    <h3 id="total-buts-encaisses">0</h3>
+                    <p>BUTS ENCAISSÉS</p>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span class="stat-icon">🏟️</span>
+                        <span class="stat-number">03</span>
+                    </div>
+                    <h3 id="total-matchs">0</h3>
+                    <p>MATCHS JOUÉS</p>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span class="stat-icon">🏆</span>
+                        <span class="stat-number">04</span>
+                    </div>
+                    <h3 id="total-victoires">0</h3>
+                    <p>VICTOIRES</p>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span class="stat-icon">✕</span>
+                        <span class="stat-number">05</span>
+                    </div>
+                    <h3 id="total-defaites">0</h3>
+                    <p>DÉFAITES</p>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span class="stat-icon">🤝</span>
+                        <span class="stat-number">06</span>
+                    </div>
+                    <h3 id="total-nuls">0</h3>
+                    <p>MATCHS NULS</p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CLASSEMENT DES BUTEURS
+        ========================== -->
+
+        <section class="section" id="buteurs">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">02 / TOP PERFORMERS</p>
+                    <h2>CLASSEMENT <span>DES BUTEURS</span></h2>
+                    <p class="section-description">
+                        Ceux qui font trembler les filets.
+                    </p>
+                </div>
+
+                <span class="tag">TOP SCORERS</span>
+
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>RANG</th>
+                            <th>JOUEUR</th>
+                            <th>BUTS</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="classement-buteurs">
+                        <tr>
+                            <td colspan="3">Chargement du classement...</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             HISTORIQUE DES MATCHS
+        ========================== -->
+
+        <section class="section" id="matchs">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">03 / GAME HISTORY</p>
+                    <h2>DERNIERS <span>MATCHS</span></h2>
+                    <p class="section-description">
+                        Chaque rencontre écrit notre histoire.
+                    </p>
+                </div>
+
+                <span class="tag">MATCH CENTER</span>
+
+            </div>
+
+            <div id="historique-matchs" class="match-list">
+                <p>Chargement des matchs...</p>
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONNEXION ADMINISTRATEUR
+        ========================== -->
+
+        <section class="section admin-section" id="connexion-admin">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">PRIVATE AREA / 04</p>
+                    <h2>ESPACE <span>ADMINISTRATEUR</span></h2>
+                    <p class="section-description">
+                        Gestion sécurisée des rencontres du club.
+                    </p>
+                </div>
+
+                <span class="tag">ADMIN ACCESS</span>
+
+            </div>
+
+            <div class="admin-panel">
+
+                <form id="form-connexion" class="admin-login">
+
+                    <div class="form-intro">
+
+                        <span class="form-icon">◆</span>
+
+                        <div>
+                            <h3>Connexion sécurisée</h3>
+                            <p>Réservée à l'administrateur du club.</p>
+                        </div>
+
+                    </div>
+
+                    <label for="email-admin">Adresse email</label>
+
+                    <input
+                        type="email"
+                        id="email-admin"
+                        placeholder="Ton adresse email"
+                        autocomplete="username"
+                        required
+                    >
+
+                    <label for="motdepasse-admin">Mot de passe</label>
+
+                    <input
+                        type="password"
+                        id="motdepasse-admin"
+                        placeholder="Ton mot de passe"
+                        autocomplete="current-password"
+                        required
+                    >
+
+                    <button type="submit">
+                        SE CONNECTER <span>↗</span>
+                    </button>
+
+                </form>
+
+
+                <div class="admin-connected">
+
+                    <div class="admin-connected-copy">
+
+                        <span class="status-dot"></span>
+
+                        <div>
+                            <strong>Session administrateur</strong>
+                            <p>Tu es connecté à l'espace de gestion.</p>
+                        </div>
+
+                    </div>
+
+                    <button id="btn-deconnexion" type="button" hidden>
+                        SE DÉCONNECTER
+                    </button>
+
+                </div>
+
+                <p
+                    id="message-admin"
+                    class="admin-message"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             AJOUTER UN MATCH
+        ========================== -->
+
+        <section class="section admin-section" id="ajouter-match" hidden>
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">ADMIN TOOLS / 05</p>
+                    <h2>ENREGISTRER <span>UN MATCH</span></h2>
+                    <p class="section-description">
+                        Renseigne le résultat et les joueurs présents.
+                    </p>
+                </div>
+
+                <span class="tag">NEW MATCH</span>
+
+            </div>
+
+
+            <form id="form-match" class="match-form">
+
+                <!-- Informations du match -->
+
+                <div class="form-grid">
+
+                    <div class="form-field">
+                        <label for="date-match">Date de la rencontre</label>
+                        <input
+                            type="date"
+                            id="date-match"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-field">
+                        <label for="buts-nemesis">Buts NERO NEMESIS</label>
+                        <input
+                            type="number"
+                            id="buts-nemesis"
+                            min="0"
+                            step="1"
+                            placeholder="0"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-field">
+                        <label for="buts-adversaire">Buts adversaire</label>
+                        <input
+                            type="number"
+                            id="buts-adversaire"
+                            min="0"
+                            step="1"
+                            placeholder="0"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+
+                <!-- Joueurs présents -->
+
+                <div class="selection-joueurs form-subsection">
+
+                    <div class="subsection-heading">
+
+                        <span>01</span>
+
+                        <div>
+                            <h3>Joueurs présents</h3>
+                            <p>
+                                Sélectionne les joueurs ayant participé à la rencontre.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div
+                        id="selection-participants"
+                        class="participant-grid"
+                    >
+                        Chargement des joueurs...
+                    </div>
+
+                </div>
+
+
+                <!-- Buteurs -->
+
+                <div class="selection-buteurs form-subsection">
+
+                    <div class="subsection-heading">
+
+                        <span>02</span>
+
+                        <div>
+                            <h3>Buts par joueur</h3>
+                            <p>
+                                Indique le nombre de buts inscrits par chaque joueur sélectionné.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div
+                        id="selection-buteurs"
+                        class="scorer-grid"
+                    >
+                        Sélectionne les joueurs présents pour saisir leurs buts.
+                    </div>
+
+                </div>
+
+
+                <button type="submit" class="submit-match">
+                    ENREGISTRER LE MATCH <span>↗</span>
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- =========================
+             EFFECTIF DU CLUB
+        ========================== -->
+
+        <section class="section" id="joueurs">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">06 / THE SQUAD</p>
+                    <h2>NOTRE <span>EFFECTIF</span></h2>
+                    <p class="section-description">
+                        Huit joueurs. Une seule famille.
+                    </p>
+                </div>
+
+                <span class="tag">NEMESIS SQUAD</span>
+
+            </div>
+
+            <div id="liste-joueurs" class="players-grid">
+                <p>Chargement des joueurs...</p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         PIED DE PAGE
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-logo">N</div>
+
+        <h2>NERO NEMESIS FC</h2>
+
+        <p class="footer-slogan">
+            ONE TEAM. ONE LEGACY.
+        </p>
+
+        <div class="footer-line"></div>
+
+        <p class="copyright">
+            © 2026 NERO NEMESIS FC — TOUS DROITS RÉSERVÉS.
+        </p>
+
+    </footer>
+
+</body>
+</html>
